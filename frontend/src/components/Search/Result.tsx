@@ -1,8 +1,6 @@
 import style from "./Result.module.scss";
 import {
   Search_result_card,
-  My_bookmark_card,
-  My_like_card,
 } from "../UI/Card_ui";
 import { cocktailType } from "../../type/cocktailTypes";
 import { useState, useEffect } from "react";
@@ -22,7 +20,7 @@ const Result: React.FunctionComponent<propsType> = ({ clickSearchBtn, addNumIngr
   const [sortingNum, setSortingNum] = useState<number>(0);
   const [cocktailCnt, setCocktailCnt] = useState<number>(0);
   const [pageEnd, setPageEnd] = useState<boolean>(false);
-  let [sendIngredient, setSendIngredient] = useState<number[]>([]);
+  let [, setSendIngredient] = useState<number[]>([]);
   let [likeChecked, setLikeChecked] = useState<boolean>(false);
   let [rankChecked, setRankChecked] = useState<boolean>(false);
   let [sortCheckName, setSortCheckName] = useState<string>("");
@@ -181,13 +179,11 @@ const Result: React.FunctionComponent<propsType> = ({ clickSearchBtn, addNumIngr
       } else {
         tmpdifficulty = saveDifficulty.join(",");
       }
-      //참인 것들만 재료에 담아줘..
-      tmpingredient = saveIngredient.join(",");
 
       //끝을 감지했다면?
       axios
-        .get(`https://j8b208.p.ssafy.io/api/cocktails/search`, {
-          params: {
+        .post(`https://j8b208.p.ssafy.io/api/cocktails/search`, {
+          body: {
             page: page,
             sort_num: sortingNum,
             cocktail_name: saveName,
