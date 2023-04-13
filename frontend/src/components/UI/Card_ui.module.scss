@@ -1,0 +1,639 @@
+.detail_card {
+  // height: 10%;
+
+  .detail_card_top {
+    .detail_cocktailImg {
+      margin: 0 auto;
+      border-radius: 9%;
+      width: 65%;
+      height: 30vh;
+    }
+  }
+
+  .detail_card_bottom {
+    .detail_cocktailName {
+      margin: 0 auto;
+
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .detail_sub {
+      width: fit-content;
+      display: flex;
+      margin: 0 auto;
+      justify-content: space-between;
+      gap: 5px;
+      align-items: center;
+      text-align: center;
+
+      .detail_likeImg {
+        width: 20px;
+        height: 20px;
+      }
+
+      .detail_like {
+        width: fit-content;
+        height: 32px;
+
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+      }
+
+      .detail_rateImg {
+        width: 24px;
+        height: 24px;
+      }
+
+      .detail_rate {
+        width: fit-content;
+        height: 32px;
+
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+.recommendCard {
+  padding: 3%;
+
+  .recommendCard_content {
+    margin-left: 4%;
+
+    .recommendCard_content_img {
+      img {
+        width: 20vh;
+        height: 22vh;
+      }
+    }
+
+    .recommendCard_content_desc {
+      margin: 15% 0;
+      margin-bottom: 30%;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}
+
+.commentCard {
+  display: flex;
+  height: 15vh;
+
+  .commentCard_img {
+    flex: 0.8;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    img {
+      height: 15vh;
+      border-radius: 15%;
+      padding-right: 5%;
+    }
+  }
+  .commentCard_body {
+    flex: 1.5;
+    .commentCard_comment_date {
+      font-size: 15px;
+      margin-bottom: 1%;
+      margin-top: 1%;
+    }
+    .commentCard_cocktail_info {
+      display: flex;
+      .commentCard_cocktail_title {
+        font-size: 22px;
+        // line-height: 3px;
+        font-weight: bold;
+        margin-right: 3%;
+        .commentCard_cocktail_detail_info {
+          padding-top: 5%;
+          display: flex;
+          img {
+            height: 20px;
+            margin-right: 1%;
+          }
+          .commentCard_cocktail_rating {
+            font-size: 20px;
+            margin-right: 5%;
+          }
+        }
+      }
+    }
+  }
+  .commentCard_comment {
+    border-left: 1px solid #253976;
+    padding: 1%;
+    flex: 2.3;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+}
+
+.analysisCard {
+  width: 120px;
+  height: 150px;
+
+  .cocktailImg {
+    width: 100px;
+    height: 110px;
+    margin: 0px auto;
+    border-radius: 9%;
+  }
+  .cocktailName {
+    height: 18px;
+    margin: 0px auto;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.myCard {
+  margin-bottom: 5px;
+  width: 152.92px;
+  height: fit-content;
+
+  border: 0.592708px solid #253976;
+  border-radius: 8.89062px;
+
+  .cocktailImg {
+    margin: 0 auto;
+    margin-top: 4px;
+    width: 144px;
+    height: 122px;
+    border-radius: 9px;
+  }
+
+  div {
+    margin: 0 auto;
+    .cocktailName {
+      width: 90%;
+      height: 20px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 17px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .sub {
+      gap: 0px;
+      display: flex;
+      margin: 0 auto;
+      .likeImg {
+        width: 22px;
+        height: 22px;
+      }
+      .like {
+        width: fit-content;
+        height: 15px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 22px;
+      }
+      .rateImg {
+        width: 22px;
+        height: 18px;
+      }
+      .rate {
+        width: fit-content;
+        height: 15px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+.result_card {
+  margin-bottom: 3%;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  border-color: black;
+  border-width: 1px;
+  .result_card_img {
+    width: 13vw;
+    height: 35vh;
+    border-radius: 3%;
+    z-index: 1;
+  }
+
+  .result_card_bookmark_icon {
+    position: absolute;
+    right: 15%;
+    top: 0%;
+    z-index: 2;
+    animation: 2s;
+  }
+
+  .result_card_bookmark_icon:hover {
+    width: 15%;
+    cursor: pointer;
+    opacity: 75%;
+    animation: 2s;
+  }
+
+  .result_card_title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    word-spacing: -1px;
+    letter-spacing: -1px;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5% 0;
+  }
+
+  .result_stat {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 3%;
+    padding-bottom: 1%;
+
+    .result_like {
+      display: flex;
+      align-items: center;
+      .result_likeImg {
+        width: 40%;
+        height: 65%;
+        padding: 5%;
+      }
+
+      .result_like_count {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 29px;
+        align-items: center;
+      }
+    }
+
+    .result_rating {
+      display: flex;
+      align-items: center;
+      .result_rateImg {
+        width: 30%;
+        height: 70%;
+        padding: 3%;
+      }
+
+      .result_rating_score {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 29px;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.flip {
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  perspective: 3000px;
+
+  .world_cup_card {
+    transition: all ease 0.55s;
+    transform-style: preserve-3d;
+
+    .world_cup_card_front {
+      position: absolute;
+      backface-visibility: hidden;
+      border-radius: 5px;
+      border: 1px solid rgba(0, 0, 255, 0.27);
+      padding-top: 2%;
+      width: 100%;
+      height: 66vh;
+
+      .world_cup_top {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 5px;
+
+        .world_cup_cocktailImg {
+          border-radius: 5px;
+          width: 94%;
+          height: 50vh;
+        }
+      }
+
+      .world_cup_bottom {
+        vertical-align: middle;
+
+        .world_cup_cocktail_name_ko {
+          margin: 0 auto;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 42px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          color: #253976;
+        }
+
+        .world_cup_cocktail_name_en {
+          margin: 0 auto;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 42px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+
+          color: #253976;
+        }
+      }
+    }
+
+    .world_cup_card_back {
+      backface-visibility: hidden;
+      transform: rotateY(180deg);
+      border: 1px solid rgba(0, 0, 255, 0.27);
+      border-radius: 5px;
+      padding-top: 2%;
+      margin-top: 5%;
+      height: 66vh;
+    }
+
+    .world_cup_title {
+      .world_cup_cocktail_name_ko {
+        margin: 0 auto;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 42px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        color: #253976;
+      }
+
+      .world_cup_cocktail_name_en {
+        margin: 0 auto;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        color: #253976;
+      }
+    }
+
+    .ingredient_list {
+      padding-top: 5%;
+      padding-left: 3%;
+      text-align: left;
+      
+      .ingredient_legendIMG {
+        width: 35%;
+        padding-bottom: 3%;
+      }
+      .ingredients{
+        height: 15vh;
+        overflow-y: scroll;
+      }
+
+      .ingredient_list_element {
+        padding-bottom: 1%;
+      }
+    }
+
+    .recipe_content_textarea {
+      // padding-top: 5%;
+      // padding-left: 3%;
+      text-align: left;
+
+      .recipe_content_title {
+        padding-left: 3%;
+        width: 60px;
+        height: 60px;
+
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+
+        color: #6d8843;
+      }
+      .recipe_content{
+      padding: 3%;
+
+        height: 15vh;
+        overflow-y: scroll;
+      }
+    }
+  }
+}
+
+.flip:hover .world_cup_card {
+  transform: rotateY(180deg);
+}
+
+.flip_winner {
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  perspective: 3000px;
+  width: 320px;
+  .world_cup_card {
+    transition: all ease 0.55s;
+    transform-style: preserve-3d;
+    background: linear-gradient(135deg, #f9d29b, #f0c665);
+    box-shadow: 0px 2px 15px rgba(255, 201, 94, 0.6);
+
+    .world_cup_card_front {
+      position: absolute;
+      backface-visibility: hidden;
+      border-radius: 5px;
+      border: 2px solid rgb(233, 251, 38);
+      padding-top: 2%;
+      width: 100%;
+      height: 66vh;
+
+      .world_cup_top {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 5px;
+
+        .world_cup_cocktailImg {
+          border-radius: 5px;
+          width: 94%;
+          height: 50vh;
+        }
+      }
+
+      .world_cup_bottom {
+        vertical-align: middle;
+
+        .world_cup_cocktail_name_ko {
+          margin: 0 auto;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 42px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          color: #253976;
+        }
+
+        .world_cup_cocktail_name_en {
+          margin: 0 auto;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 42px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+
+          color: #253976;
+        }
+      }
+    }
+
+    .world_cup_card_back {
+      backface-visibility: hidden;
+      transform: rotateY(180deg);
+      border: 2px solid rgb(233, 251, 38);
+
+      border-radius: 5px;
+      padding-top: 2%;
+      margin-top: 5%;
+      height: 66vh;
+    }
+
+    .world_cup_title {
+      .world_cup_cocktail_name_ko {
+        margin: 0 auto;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 42px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        color: #253976;
+      }
+
+      .world_cup_cocktail_name_en {
+        margin: 0 auto;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        color: #253976;
+      }
+    }
+
+    .ingredient_list {
+      padding-top: 5%;
+      padding-left: 3%;
+      text-align: left;
+
+      .ingredient_legendIMG {
+        width: 35%;
+        padding-bottom: 3%;
+      }
+
+      .ingredient_list_element {
+        padding-bottom: 1%;
+      }
+    }
+
+    .recipe_content_textarea {
+      padding-top: 5%;
+      padding-left: 3%;
+      text-align: left;
+
+      .recipe_content_title {
+        width: 65px;
+        height: 64px;
+
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+
+        color: #6d8843;
+      }
+    }
+  }
+}
+
+.flip_winner:hover .world_cup_card {
+  transform: rotateY(180deg);
+}

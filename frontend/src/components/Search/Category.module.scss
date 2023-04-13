@@ -1,0 +1,13 @@
+.category {
+  .category_title {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+    padding-top: 5px;
+  }
+  .category_base_check {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

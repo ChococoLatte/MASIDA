@@ -1,0 +1,43 @@
+.result {
+  height: 10vh;
+  flex-direction: column;
+  margin: 30px;
+  .result_header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    .result_sort {
+      margin-bottom: 5px;
+      .result_sort_btn {
+        opacity: 0;
+      }
+      .result_sort_label {
+        margin-right: 1rem;
+        color: #9b9292;
+      }
+      input:checked + label {
+        font-size: 25px;
+        color: black;
+        font-weight: bold;
+      }
+    }
+  }
+  .result_card_list {
+    margin-top: 1%;
+    height: 80vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    justify-content: center;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 1%;
+  }
+}
+.spinner_location {
+  position: fixed; /* 화면 스크롤에 영향을 받지 않는 고정 위치 */
+  top: 55%; /* 상단에서 50% 위치 */
+  right : 43%; /* 왼쪽 끝에 위치 */
+  transform: translateY(-50%); /* 상단에서 50% 위치에서 위로 이동 */
+}

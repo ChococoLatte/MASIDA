@@ -1,0 +1,27 @@
+.progressBar {
+  border: 1px solid #c1c1c1;
+  border-radius: 5%;
+  padding: 5%;
+
+  h3 {
+    padding-bottom: 5%;
+  }
+
+  .progressBar_content {
+    .progressBar_content_first {
+      margin-bottom: 3%;
+
+      .progressBar_content_desc {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3%;
+      }
+      .progressBar_gauge_layer {
+        border: 1px solid #dadada;;
+        .progressBar_gauge{
+          border: 1px solid #dadada;;
+        }
+      }
+    }
+  }
+}
